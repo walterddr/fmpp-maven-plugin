@@ -24,11 +24,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.walterddr</groupId>
+  <groupId>io.github.walterddr</groupId>
   <artifactId>fmpp-maven-plugin</artifactId>
   <name>FMPP Maven plugin</name>
+  <description>Maven plugin to run FMPP text file preprocessing tool during build time</description>
+  <url>https://github.com/walterddr</url>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <developerConnection>scm:git:git@github.com:walterddr/fmpp-maven-plugin.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,6 +88,41 @@
   </dependencies>
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.3.2</version>
+        <configuration>
+          <tags>
+            <tag>
+              <name>goal</name>
+              <placement>a</placement>
+              <head>Goal:</head>
+            </tag>
+            <tag>
+              <name>phase</name>
+              <placement>a</placement>
+              <head>Phase:</head>
+            </tag>
+            <tag>
+              <name>threadSafe</name>
+              <placement>a</placement>
+              <head>Thread Safe:</head>
+            </tag>
+            <tag>
+              <name>requiresDependencyResolution</name>
+              <placement>a</placement>
+              <head>Requires Dependency Resolution:</head>
+            </tag>
+            <tag>
+              <name>requiresProject</name>
+              <placement>a</placement>
+              <head>Requires Project:</head>
+            </tag>
+          </tags>
+
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>

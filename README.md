@@ -3,8 +3,6 @@ FMPP Maven Plugin
 
 This is largely inspired by https://github.com/dremio/dremio-oss/tree/master/tools/fmpp-maven-plugin.
 
-Provide a context free FMPP Maven Plugin.
-
 Example usage:
 ```
       <plugin>

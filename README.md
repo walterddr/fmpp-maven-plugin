@@ -6,7 +6,7 @@ This is largely inspired by https://github.com/dremio/dremio-oss/tree/master/too
 Example usage:
 ```
       <plugin>
-        <groupId>org.walterddr</groupId>
+        <groupId>io.github.walterddr</groupId>
         <artifactId>fmpp-maven-plugin</artifactId>
         <version>${project.version}</version>
         <executions>

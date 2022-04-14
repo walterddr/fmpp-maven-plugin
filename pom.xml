@@ -27,7 +27,7 @@
   <name>FMPP Maven plugin</name>
   <description>Maven plugin to run FMPP text file preprocessing tool during build time</description>
   <url>https://github.com/walterddr</url>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <licenses>
@@ -49,7 +49,7 @@
     <connection>scm:git:git@github.com:walterddr/fmpp-maven-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:walterddr/fmpp-maven-plugin.git</developerConnection>
     <url>https://github.com/walterddr/fmpp-maven-plugin</url>
-    <tag>fmpp-maven-plugin-0.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
